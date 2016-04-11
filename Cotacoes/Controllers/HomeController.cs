@@ -38,7 +38,7 @@ namespace Cotacoes.Controllers
                     IWebProxy defaultWebProxy = WebRequest.DefaultWebProxy;
                     defaultWebProxy.Credentials = CredentialCache.DefaultCredentials;
                     w.Proxy = defaultWebProxy;
-                    json_data = w.DownloadString("http://webservices.infoinvest.com.br/cotacoes/cotacoes_handler.asp?&quotes=&quotes=sp.PETR4&quotes=sp.ITUB4&quotes=sp.PCAR4&quotes=sp.AGRO3&quotes=BR.IBOVESPA&quotes=US.DOLARC");
+                    json_data = w.DownloadString("http://webservices.infoinvest.com.br/cotacoes/cotacoes_handler.asp?&quotes=&quotes=sp.petr4&quotes=sp.itub4&quotes=sp.pcar4&quotes=BR.IBOVESPA&quotes=US.DOLARC");
                 }
                 catch (Exception ex)
                 {
